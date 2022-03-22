@@ -8,7 +8,7 @@ Cedar is temporally out of oredr. Therefore working on grahgam directory,
 Ben had sent vcf files with all chromosomes togethere. Going to start by splitting them to increase efficiency. Received files are in the folder 
 
 ```bash
-new_vcf_files_for_analysis
+all_chrs_together_vcf
 ```
 
 named as
