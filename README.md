@@ -51,7 +51,8 @@ mkdir scripts
 now save two job arrays to cal admixture(2:6 and 7:12-run array numbers acccordingly) in scripts folder changing array numbers
 
 as cal_admix_2to6.sh
-``bash
+
+```bash
 #!/bin/sh
 #SBATCH --job-name=bwa_505
 #SBATCH --nodes=1
