@@ -22,6 +22,70 @@ mkdir s_only
 mv *Lsub* l_only/
 mv *Ssub* s_only/
 ```
+
+then renamed vcf files inside the directories as autosomes so it is easier and we can use the same script for both l and s
+
+in l_only,
+
+```bash
+mv all_XL_onlyXL_only_Lsubgenome.vcf.gz autosomes.vcf.gz
+```
+ 
+ same in s_only
+```
+mv all_XL_onlyXL_only_Ssubgenome.vcf.gz autosomes.vcf.gz
+```
+
+gunzip gz files(this in both L and S)
+
+run this inside l_only
+```
+gunzip autosomes.vcf.gz
+cd ../s_only
+gunzip autosomes.vcf.gz
+cd ../l_only
+```
+
+try filtering the data to remove positions that have >50% missing data. This might decrease the size of the data substantially. 
+If the file sizes are way smaller (e.g. half as large)
+then no need to thin any more
+
+save this in l_only
+```
+#!/bin/sh
+#SBATCH --job-name=bwa_505
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=24:00:00
+#SBATCH --mem=32gb
+#SBATCH --output=bwa505.%J.out
+#SBATCH --error=bwa505.%J.err
+#SBATCH --account=def-ben
+
+module load StdEnv/2020
+module load vcftools/0.1.16
+
+vcftools --vcf autosomes.vcf --max-missing 0.5 --out ./autosomes_missing_filtered.vcf --recode
+
+```
+run in both directories
+
+```
+sbatch remove_missing_sites.sh
+cp remove_missing_sites.sh ../s_only/
+cd ../s_only/
+sbatch remove_missing_sites.sh
+cd ../l_only/
+```
+
+
+
+
+
+
+
+
+
 convert to geno format using plink , make a bed file and remove any SNP with no data for autosomes do all these for l_only and s_only seperately and we need to change the chr names in the .bim file because these cause problems for admixture: create a directory to collect outputs from next step
 
 Run this in the directory with l_only and s_only folders
