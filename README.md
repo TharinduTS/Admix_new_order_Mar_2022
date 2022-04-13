@@ -77,15 +77,6 @@ cd ../s_only/
 sbatch remove_missing_sites.sh
 cd ../l_only/
 ```
-
-
-
-
-
-
-
-
-
 convert to geno format using plink , make a bed file and remove any SNP with no data for autosomes do all these for l_only and s_only seperately and we need to change the chr names in the .bim file because these cause problems for admixture: create a directory to collect outputs from next step
 
 Run this in the directory with l_only and s_only folders
@@ -97,7 +88,8 @@ I am renaming vcf files as autosomes.vcf to make it easier for the next few step
 for i in l_only s_only; do
 module load StdEnv/2020  intel/2020.1.217 bcftools/1.11
 cd ${i}
-mv *subgenome.vcf.gz autosomes.vcf.gz
+mv autosomes.vcf autosomes_unfiltered.vcf
+bgzip -c autosomes_missing_filtered.vcf.recode.vcf > autosomes.vcf.gz
 tabix -p vcf autosomes.vcf.gz
 module load nixpkgs/16.09  intel/2016.4 plink/1.9b_5.2-x86_64
 plink --vcf ./autosomes.vcf.gz --make-bed --geno 0.999 --out ./autosomes --allow-extra-chr --const-fid
@@ -105,6 +97,12 @@ awk -v OFS='\t' '{$1=0;print $0}' autosomes.bim > autosomes.bim.tmp
 mv autosomes.bim.tmp autosomes.bim
 cd .. ; done
 ```
+
+
+
+
+
+
 
 creating a directory for scripts in the same directory with l_only and s_only folders
 
