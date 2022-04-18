@@ -184,3 +184,14 @@ mkdir to_download
 rsync -ap --exclude="*.vcf*" --exclude="*.sh" --exclude="bwa*" all_chrs_together_vcf/* to_download
 ```
  
+Then download selected files
+
+Create a sample list assigning all the samples into populations like following(here I assigned all of them to tropicalis)
+you can create a tab seperated txt file with sample name in first column and species or population in second column using excel.
+
+you can get the sample list by
+
+```
+module load StdEnv/2020  gcc/9.3.0 bcftools/1.13
+bcftools query -l autosomes.vcf.gz
+```
