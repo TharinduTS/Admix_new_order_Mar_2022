@@ -175,4 +175,12 @@ sbatch cal_admix_2to6.sh
 sbatch cal_admix_7to13.sh
 cd ..; done
 ```
+ou can collect the files need to be downloaded for the next step into a new directory creating a directory called 'to_download' by running this command. Here I have excluded not needed file types to reduce the download size.
+
+Run this in the ADMIXTURE folder
+
+```
+mkdir to_download
+rsync -ap --exclude="*.vcf*" --exclude="*.sh" --exclude="bwa*" all_chrs_together_vcf/* to_download
+```
  
