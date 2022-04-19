@@ -195,3 +195,115 @@ you can get the sample list by
 module load StdEnv/2020  gcc/9.3.0 bcftools/1.13
 bcftools query -l autosomes.vcf.gz
 ```
+example file
+
+```txt
+2014_Inhaca_10_Inhaca_ATATGT_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_150_Inhaca_ATCGTA_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_152_Inhaca_CATCGT_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_24_Inhaca_CGCGGT_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_38_Inhaca_CTATTA_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_52_Inhaca_GCCAGT_cuttrim_sorted.bam	Inhaca
+2014_Inhaca_65_Inhaca_GGAAGA_cuttrim_sorted.bam	Inhaca
+946_Draken_TCGTT_cuttrim_sorted.bam	Draken
+993_Draken_GGTTGT_cuttrim_sorted.bam	Draken
+BJE3508_DeDorn_ATTGA_cuttrim_sorted.bam	DeDorn
+BJE3509_DeDorn_CATCT_cuttrim_sorted.bam	DeDorn
+BJE3510_DeDorn_CCTAG_cuttrim_sorted.bam	DeDorn
+BJE3511_DeDorn_GAGGA_cuttrim_sorted.bam	DeDorn
+BJE3512_DeDorn_GGAAG_cuttrim_sorted.bam	DeDorn
+BJE3513_DeDorn_GTCAA_cuttrim_sorted.bam	DeDorn
+BJE3514_DeDorn_TAATA_cuttrim_sorted.bam	DeDorn
+BJE3515_DeDorn_TACAT_cuttrim_sorted.bam	DeDorn
+BJE3525_Laigns_GAATTCA_cuttrim_sorted.bam	Laigns
+BJE3526_Laigns_GAACTTG_cuttrim_sorted.bam	Laigns
+BJE3527_Laigns_GGACCTA_cuttrim_sorted.bam	Laigns
+BJE3528_Laigns_GTCGATT_cuttrim_sorted.bam	Laigns
+BJE3529_Laigns_AACGCCT_cuttrim_sorted.bam	Laigns
+BJE3530_Laigns_AATATGG_cuttrim_sorted.bam	Laigns
+BJE3531_Laigns_ACGTGTT_cuttrim_sorted.bam	Laigns
+BJE3532_Laigns_ATTAATT_cuttrim_sorted.bam	Laigns
+BJE3533_Laigns_ATTGGAT_cuttrim_sorted.bam	Laigns
+BJE3534_BW_CTCG_cuttrim_sorted.bam	BW
+BJE3535_BW_TGCA_cuttrim_sorted.bam	BW
+BJE3536_BW_ACTA_cuttrim_sorted.bam	BW
+BJE3537_BW_CAGA_cuttrim_sorted.bam	BW
+BJE3538_BW_AACT_cuttrim_sorted.bam	BW
+BJE3539_BW_GCGT_cuttrim_sorted.bam	BW
+BJE3541_BW_CGAT_cuttrim_sorted.bam	BW
+BJE3542_BW_GTAA_cuttrim_sorted.bam	BW
+BJE3543_BW_AGCG_cuttrim_sorted.bam	BW
+BJE3544_BW_GATG_cuttrim_sorted.bam	BW
+BJE3545_BW_TCAG_cuttrim_sorted.bam	BW
+BJE3546_BW_TGCGA_cuttrim_sorted.bam	BW
+BJE3547_GRNP_TAGGAA_cuttrim_sorted.bam	GRNP
+BJE3548_GRNP_GCTCTA_cuttrim_sorted.bam	GRNP
+BJE3549_GRNP_CCACAA_cuttrim_sorted.bam	GRNP
+BJE3550_GRNP_CTTCCA_cuttrim_sorted.bam	GRNP
+BJE3551_GRNP_GAGATA_cuttrim_sorted.bam	GRNP
+BJE3552_GRNP_ATGCCT_cuttrim_sorted.bam	GRNP
+BJE3553_GRNP_AGTGGA_cuttrim_sorted.bam	GRNP
+BJE3554_GRNP_ACCTAA_cuttrim_sorted.bam	GRNP
+BJE3573_VicW_CGCGGAGA_cuttrim_sorted.bam	VicW
+BJE3574_VicW_CGTGTGGT_cuttrim_sorted.bam	VicW
+BJE3575_Kimber_GTACTT_cuttrim_sorted.bam	Kimber
+BJE3576_Kimber_GTTGAA_cuttrim_sorted.bam	Kimber
+BJE3578_Kimber_TGGCTA_cuttrim_sorted.bam	Kimber
+BJE3579_Kimber_TATTTTT_cuttrim_sorted.bam	Kimber
+BJE3580_Kimber_CTTGCTT_cuttrim_sorted.bam	Kimber
+BJE3581_Kimber_ATGAAAG_cuttrim_sorted.bam	Kimber
+BJE3582_Kimber_AAAAGTT_cuttrim_sorted.bam	Kimber
+BJE3633_Niewou_CGCTGAT_cuttrim_sorted.bam	Niewou
+BJE3640_Niewou_CGGTAGA_cuttrim_sorted.bam	Niewou
+BJE3641_Niewou_CTACGGA_cuttrim_sorted.bam	Niewou
+BJE3642_Niewou_GCGGAAT_cuttrim_sorted.bam	Niewou
+BJE3644_Niewou_TAGCGGA_cuttrim_sorted.bam	Niewou
+BJE3645_Niewou_TCGAAGA_cuttrim_sorted.bam	Niewou
+BJE3647_Niewou_TCTGTGA_cuttrim_sorted.bam	Niewou
+BJE3654_ThreeSis_TGCTGGA_cuttrim_sorted.bam	Threesis
+BJE3655_ThreeSis_ACGACTAG_cuttrim_sorted.bam	Threesis
+BJE3656_ThreeSis_TAGCATGG_cuttrim_sorted.bam	Threesis
+BJE3657_ThreeSis_TAGGCCAT_cuttrim_sorted.bam	Threesis
+BJE3658_ThreeSis_TGCAAGGA_cuttrim_sorted.bam	Threesis
+BJE3659_ThreeSis_TGGTACGT_cuttrim_sorted.bam	Threesis
+BJE3660_ThreeSis_TCTCAGTG_cuttrim_sorted.bam	Threesis
+BJE3661_ThreeSis_CGCGATAT_cuttrim_sorted.bam	Threesis
+BJE3662_ThreeSis_CGCCTTAT_cuttrim_sorted.bam	Threesis
+BJE3663_ThreeSis_AACCGAGA_cuttrim_sorted.bam	Threesis
+BJE3664_ThreeSis_ACAGGGA_cuttrim_sorted.bam	Threesis
+BJE3665_ThreeSis_ACGTGGTA_cuttrim_sorted.bam	Threesis
+BJE3666_ThreeSis_CCATGGGT_cuttrim_sorted.bam	Threesis
+BJE3667_Citrus_CGCTT_cuttrim_sorted.bam	Citrus
+BJE3668_Citrus_TCACG_cuttrim_sorted.bam	Citrus
+BJE3669_Citrus_CTAGG_cuttrim_sorted.bam	Citrus
+BJE3670_Citrus_ACAAA_cuttrim_sorted.bam	Citrus
+BJE3671_Citrus_TTCTG_cuttrim_sorted.bam	Citrus
+BJE3672_Citrus_AGCCG_cuttrim_sorted.bam	Citrus
+BJE3673_Citrus_GTATT_cuttrim_sorted.bam	Citrus
+BJE3674_Citrus_CTGTA_cuttrim_sorted.bam	Citrus
+BJE3675_Citrus_ACCGT_cuttrim_sorted.bam	Citrus
+BJE3676_Citrus_GCTTA_cuttrim_sorted.bam	Citrus
+BJE3677_Citrus_GGTGT_cuttrim_sorted.bam	Citrus
+BJE3678_Citrus_AGGAT_cuttrim_sorted.bam	Citrus
+JM_no_label1_Draken_CCACGT_cuttrim_sorted.bam	Draken
+JM_no_label2_Draken_TTCAGA_cuttrim_sorted.bam	Draken
+Vred_8_Vred_GCTGTGGA_cuttrim_sorted.bam	Vred
+```
+
+# Customized script
+
+I wanted a bunch of customization in the plots given by the default R script. So I wrote the following to be used in local machine R studio.
+
+I wrote this in a way you can just copy this script to your working folder and run. This creates a directory named plot_outs and save the resulting plots in that.
+
+For this to work,
+
+1)put all outputs from previous sections including all files ending with P or Q(eg; autosomes.2.p) all files created from previous scripts with different formats like .bed .bim .fam ....etc.(eg; autosomes.bed) .log and all .out files
+
+inside each folder named- s_only and l_only(this happens automatically if you used previous scripts to select and download files)
+
+2)sample list created with assigned populations as shown above(should be named as samples.list and the r script should be in the current working directory(not inside any of the sub genome folders)
+plotADMIXTURE.r
+
+This plots all data inside all three genomes and puts the outputs creating a folder named 'plot_outs'
+
